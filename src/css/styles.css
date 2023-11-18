@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  padding: 5px 20px;
+  border: none;
+  font-size: 16px;
+  background-color: chocolate;
+  color: rgb(31, 15, 3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(56, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+img {
+  display: block;
+  width: 365px;
+  height: 300px;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.search-form {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(4, 128, 205);
+}
+
+.search-input {
+  width: 300px;
+  border: 1px solid #c2c2c2;
+  outline: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.search-input:focus {
+  border-color: rgb(5, 9, 141);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.photo-card {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.load-btn {
+  margin: 20px auto;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+span {
+  display: block;
+  text-align: center;
+}
+
+.info-title {
+  font-weight: 700;
+}
